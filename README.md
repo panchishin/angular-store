@@ -52,6 +52,9 @@
 
 ### Add product details as an aref title
 <details>
+  <summary>Hints</summary>
+
+<details>
   <summary>Hint 1</summary>
   
   `<a [title]=...`
@@ -67,7 +70,12 @@
   ```
 </details>
 
+</details>
+
 ### Product description as paragraph, if it exists
+<details>
+  <summary>Hints</summary>
+  
 <details>
   <summary>Hint 1</summary>
   
@@ -91,11 +99,16 @@
   ```
 </details>
 
+</details>
+
 
 ### Add a share button
 <details>
-  <summary>Hint 1</summary>
+  <summary>Hints</summary>
   
+<details>
+  <summary>Hint 1</summary>
+
   `(click)=`
 </details>
 
@@ -119,6 +132,9 @@
 
   ```
 </details>
+
+</details>
+
 
 ### Review
 <details>
