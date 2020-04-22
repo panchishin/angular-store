@@ -272,3 +272,64 @@ Pass the product information from product-list to product-alerts and make alert 
 </details>
 
 
+### Make 'Notify Me' work
+
+<details>
+  <summary>Hints</summary>
+  
+<details>
+  <summary>Hint 1 - import output</summary>
+
+  ```
+    import { Component } from '@angular/core';
+    import { Input } from '@angular/core';
+    import { Output, EventEmitter } from '@angular/core';
+  ```
+</details>
+
+<details>
+  <summary>Hint 2 - add output</summary>
+  
+  ```
+    export class ProductAlertsComponent {
+      @Input() product;
+      @Output() notify = new EventEmitter();
+    }
+  ```
+</details>
+
+<details>
+  <summary>Hint 3 - emit in html</summary>
+  
+  ```
+    <p *ngIf="product.price > 500">
+      <button (click)="notify.emit()">Notify Me</button>
+    </p>
+  ```
+</details>
+
+<details>
+  <summary>Hint 4</summary>
+  
+  Add on notify to ProductListComponent
+  ```
+    onNotify() {
+      window.alert('You will be notified when the product goes on sale');
+    }
+  ```
+</details>
+<details>
+  <summary>Hint 5</summary>
+  
+  Add binding to product-list.component.html
+  ```
+    <app-product-alerts
+      [product]="product" 
+      (notify)="onNotify()">
+    </app-product-alerts>
+  ```
+</details>
+
+</details>
+
+
