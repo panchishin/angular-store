@@ -278,8 +278,9 @@ Pass the product information from product-list to product-alerts and make alert 
   <summary>Hints</summary>
   
 <details>
-  <summary>Hint 1 - import output</summary>
+  <summary>Hint 1 - product-alerts.component.ts</summary>
 
+  import output
   ```
     import { Component } from '@angular/core';
     import { Input } from '@angular/core';
@@ -288,8 +289,9 @@ Pass the product information from product-list to product-alerts and make alert 
 </details>
 
 <details>
-  <summary>Hint 2 - add output</summary>
+  <summary>Hint 2 - product-alerts.component.ts</summary>
   
+  add output
   ```
     export class ProductAlertsComponent {
       @Input() product;
@@ -299,8 +301,9 @@ Pass the product information from product-list to product-alerts and make alert 
 </details>
 
 <details>
-  <summary>Hint 3 - emit in html</summary>
+  <summary>Hint 3 - product-alerts.component.html</summary>
   
+  emit in html
   ```
     <p *ngIf="product.price > 500">
       <button (click)="notify.emit()">Notify Me</button>
@@ -309,7 +312,7 @@ Pass the product information from product-list to product-alerts and make alert 
 </details>
 
 <details>
-  <summary>Hint 4</summary>
+  <summary>Hint 4 - product-list.component.ts</summary>
   
   Add on notify to ProductListComponent
   ```
@@ -319,7 +322,7 @@ Pass the product information from product-list to product-alerts and make alert 
   ```
 </details>
 <details>
-  <summary>Hint 5</summary>
+  <summary>Hint 5 - product-list.component.html</summary>
   
   Add binding to product-list.component.html
   ```
@@ -332,4 +335,8 @@ Pass the product information from product-list to product-alerts and make alert 
 
 </details>
 
+
+## Next steps
+
+Continue to https://angular.io/start/start-routing 
 
