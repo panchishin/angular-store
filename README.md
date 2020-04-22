@@ -1,8 +1,10 @@
 # Angular Store
 
+This example is from https://angular.io/start
 
 
 ## Getting Started
+Here are exercises with hints
 
 ### Build the app
 <details>
@@ -155,5 +157,108 @@
   ```( )```
 </details>
 
+
+## Product Alert
+"The next step is to create a new alert feature that takes a product as an input. The alert checks the product's price, and, if the price is greater than $700, displays a "Notify Me" button that lets users sign up for notifications when the product goes on sale."
+
+
+### Create Component 'product-alerts'
+Stub the basic module directory and 3 main files
+
+<details>
+  <summary>Hints</summary>
+  
+<details>
+  <summary>Hint 1</summary>
+
+  `src/app/product-alerts/product-alerts.component.[css/html/ts]`
+</details>
+
+<details>
+  <summary>Hint 2</summary>
+  
+  In the product-alerts.component.ts file remember to fill in
+  
+  - import
+  - @Component (selector, templateUrl, styleUrls)
+  - export class with implements
+  - constructor and ngOnInit
+
+</details>
+
+<details>
+  <summary>Hint 3</summary>
+  
+  ```
+    import { Component, OnInit } from '@angular/core';
+
+    @Component({
+      selector: 'app-product-alerts',
+      templateUrl: './product-alerts.component.html',
+      styleUrls: ['./product-alerts.component.css']
+    })
+
+    export class ProductAlertsComponent implements OnInit {
+
+        constructor() {}
+
+        ngOnInit() {}
+
+    }
+
+  ```
+</details>
+
+</details>
+
+
+
+### Connect Component 'product-alerts'
+Connect component to the application and display on product
+
+<details>
+  <summary>Hints</summary>
+  
+<details>
+  <summary>Hint 1</summary>
+
+  Add component to app.module.ts
+</details>
+
+<details>
+  <summary>Hint 2</summary>
+  
+  Add `<app-product-alerts></app-product-alerts>` to product-list.component.html
+</details>
+
+</details>
+
+
+### Pass information to Component 'product-alerts'
+Pass the product information from product-list to product-alerts and make alert only show if price > 500
+
+<details>
+  <summary>Hints</summary>
+  
+<details>
+  <summary>Hint 1</summary>
+
+  add `import { Input } from '@angular/core';` to product-alerts
+</details>
+
+<details>
+  <summary>Hint 2</summary>
+  
+  Add `@Input() product;` to ProductAlertsComponent class
+</details>
+
+
+<details>
+  <summary>Hint 3</summary>
+  
+  Update product-list `<app-product-alerts [product]="product"> </app-product-alerts>`
+</details>
+
+</details>
 
 
