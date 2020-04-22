@@ -124,17 +124,6 @@ Here are exercises with hints
   ```
 </details>
 
-<details>
-  <summary>Hint 3</summary>
-  
-  ```
-    <p *ngIf="product.description">
-        Description: {{ product.description }}
-    </p>
-
-  ```
-</details>
-
 </details>
 
 
