@@ -26,7 +26,7 @@ Here are exercises with hints
 
 ### List the products
 <details>
-  <summary>Hints</summary>
+  <summary>3 Hints</summary>
   
 <details>
   <summary>Hint 1</summary>
@@ -54,7 +54,7 @@ Here are exercises with hints
 
 ### Add product details as an aref title
 <details>
-  <summary>Hints</summary>
+  <summary>2 Hints</summary>
 
 <details>
   <summary>Hint 1</summary>
@@ -76,7 +76,7 @@ Here are exercises with hints
 
 ### Product description as paragraph, if it exists
 <details>
-  <summary>Hints</summary>
+  <summary>3 Hints</summary>
   
 <details>
   <summary>Hint 1</summary>
@@ -106,7 +106,7 @@ Here are exercises with hints
 
 ### Add a share button
 <details>
-  <summary>Hints</summary>
+  <summary>2 Hints</summary>
   
 <details>
   <summary>Hint 1</summary>
@@ -155,7 +155,7 @@ Here are exercises with hints
 Stub the basic module directory and 3 main files
 
 <details>
-  <summary>Hints</summary>
+  <summary>3 Hints</summary>
   
 <details>
   <summary>Hint 1</summary>
@@ -206,7 +206,7 @@ Stub the basic module directory and 3 main files
 Connect component to the application and display on product
 
 <details>
-  <summary>Hints</summary>
+  <summary>2 Hints</summary>
   
 <details>
   <summary>Hint 1</summary>
@@ -227,7 +227,7 @@ Connect component to the application and display on product
 Pass the product information from product-list to product-alerts and make alert only show if price > 500
 
 <details>
-  <summary>Hints</summary>
+  <summary>4 Hints</summary>
   
 <details>
   <summary>Hint 1</summary>
@@ -264,7 +264,7 @@ Pass the product information from product-list to product-alerts and make alert 
 ### Make 'Notify Me' work
 
 <details>
-  <summary>Hints</summary>
+  <summary>5 Hints</summary>
   
 <details>
   <summary>Hint 1 - product-alerts.component.ts</summary>
