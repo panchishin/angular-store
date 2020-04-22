@@ -252,11 +252,21 @@ Pass the product information from product-list to product-alerts and make alert 
   Add `@Input() product;` to ProductAlertsComponent class
 </details>
 
-
 <details>
   <summary>Hint 3</summary>
   
   Update product-list `<app-product-alerts [product]="product"> </app-product-alerts>`
+</details>
+
+<details>
+  <summary>Hint 4</summary>
+  
+  Update product-list html
+  ```
+    <p *ngIf="product.price > 500">
+      <button>Notify Me</button>
+    </p>
+  ```
 </details>
 
 </details>
