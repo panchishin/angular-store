@@ -411,3 +411,13 @@ from https://angular.io/start/start-routing
 </details>
 </details>
 
+### Route back to List
+
+<details>
+  <summary>Hint</summary>
+
+  In product-details.component.html
+  ```
+    <button [routerLink]="['/']">Back</button>
+  ```
+</details>
