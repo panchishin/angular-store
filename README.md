@@ -325,7 +325,43 @@ Pass the product information from product-list to product-alerts and make alert 
 </details>
 
 
-## Next steps
+## Next steps Routing
+from https://angular.io/start/start-routing 
 
-Continue to https://angular.io/start/start-routing 
+### Create product-details component
+
+<details>
+  <summary>Hint</summary>
+  
+  very much like creating product-alerts and wiring in app.module.ts
+</details>
+
+### update app.module.ts
+
+<details>
+  <summary>Hint</summary>
+  
+  in `app.module.ts`
+  ```
+      RouterModule.forRoot([
+        { path: '', component: ProductListComponent },
+        { path: 'products/:productId', component: ProductDetailsComponent },  // add this
+      ])
+  ```
+</details>
+
+### add route to product-list
+
+
+<details>
+  <summary>Hint</summary>
+  
+  in `app.module.ts`
+  ```
+    <h3><a [title]='product.description' [routerLink]="['/products', productId]">
+        {{product.name}} 
+    </a></h3>
+  ```
+</details>
+
 
