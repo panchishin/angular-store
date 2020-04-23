@@ -392,6 +392,16 @@ from https://angular.io/start/start-routing
   <summary>Hint 3</summary>
 
   ```
+    constructor(
+        private route: ActivatedRoute,
+      ) { }
+  ```
+</details>
+  
+<details>
+  <summary>Hint 4</summary>
+
+  ```
     ngOnInit() {
       this.route.paramMap.subscribe(params => {
         this.product = products[+params.get('productId')];
