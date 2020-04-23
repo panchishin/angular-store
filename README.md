@@ -364,4 +364,40 @@ from https://angular.io/start/start-routing
   ```
 </details>
 
+### Receive route info
+
+<details>
+  <summary>Hints</summary>
+
+<details>
+  <summary>Hint 1</summary>
+
+  in `app.module.ts`
+  ```
+    <h3><a [title]='product.description' [routerLink]="['/products', productId]">
+        {{product.name}} 
+    </a></h3>
+  ```
+</details>
+
+<details>
+  <summary>Hint 2</summary>
+
+  ```
+    import { ActivatedRoute } from '@angular/router';
+  ```
+</details>
+
+<details>
+  <summary>Hint 3</summary>
+
+  ```
+    ngOnInit() {
+      this.route.paramMap.subscribe(params => {
+        this.product = products[+params.get('productId')];
+      });
+    }
+  ```
+</details>
+</details>
 
